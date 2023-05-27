@@ -1,0 +1,7 @@
+from github import Github
+
+# First create a Github instance:
+g = Github("access_token")
+
+# Create a new repository
+repo = g.get_user().create_repo("my-new-repo")
